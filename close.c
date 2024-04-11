@@ -59,7 +59,7 @@ void	close_fds_last_cmd(t_pipex *pipex)
 void	close_fds_in_parent_proces(t_pipex *pipex)
 {
 	pipex->current_cmd = 0;
-	while(pipex->current_cmd < pipex->cmd_count - 1)
+	while (pipex->current_cmd < pipex->cmd_count - 1)
 	{
 		close(pipex->fd[pipex->current_cmd][0]);
 		close(pipex->fd[pipex->current_cmd][1]);

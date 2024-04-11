@@ -21,10 +21,10 @@ char	*my_strncpy(char *dest, const char *src, unsigned int n)
 int	foo_sum_tar(char const *s, char c)
 {
 	int	sum_tar;
-	int	sum_space;
+	//int	sum_space;
 
 	sum_tar = 0;
-	sum_space = 0;
+	//sum_space = 0;
 	while (*s == c)
 		s++;
 	while (*s != '\0')
